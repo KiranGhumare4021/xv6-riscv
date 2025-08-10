@@ -106,11 +106,14 @@ open_file(char *file) {
 void
 tail(int fd, int no_of_lines) 
 {
-    if (no_of_lines <= 0) {
-        return;
+    int n, start = 0, line_count=0, j=0;
+    // handling 0 input case where the input is allowed
+    if (no_of_lines == 0) {
+      while ((n = read(fd, buf, sizeof(buf))) > 0);
+      exit(0);
     }
     char **circular_queue = malloc(no_of_lines * sizeof(char *));
-    int n, start = 0, line_count=0, j=0;
+    
     while((n = read(fd, buf, sizeof(buf))) > 0) {
         for(int i=0;i<n;i++) {
             if(buf[i]=='\n') {
