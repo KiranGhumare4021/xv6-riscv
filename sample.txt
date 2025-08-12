@@ -1,0 +1,15 @@
+Line 1: The quick brown fox
+Line 2: jumps over the lazy dog
+Line 3: And runs away quickly
+Line 4: This is just a test file
+Line 5: For checking the tail command
+Line 6: You should see only the last lines
+Line 7: depending on the arguments you pass
+Line 8: to the tail program
+Line 9: Hope this helps
+Line 10: End of file section one
+Line 11: Adding a few more lines
+Line 12: So you can test longer tails
+Line 13: This is almost the end
+Line 14: Second last line
+Line 15: This is the final line
